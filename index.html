@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="sidebar.css">
+      <link rel="stylesheet" href="charSheet.css">
+      <script type="text/javascript" src="src/pages.js"></script>
+      <script type="text/javascript" src="src/character.js"></script>
+      <script type="text/javascript" src="src/sideBar.js"></script>
+      <script type="text/javascript" src="src/stats.js"></script>
+      <script type="text/javascript" src="src/index.js"></script>
+      <script type="text/javascript" src="src/random.js"></script>
+      <title>Bite Size DnD</title>
+  </head>  
+  <body>
+        <!-- Dice Modal -->
+    <div class="modal fade" id="diceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="diceModal-title">Rolling X</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="diceModal-body">
+          </div>
+          <div class="modal-footer" id='dice-modal-footer'>
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rest Modal -->
+    <div class="modal fade" id="restModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Returning to Town...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class='modal-div'>
+            <label>Amount of silver looted: </label><input type='number' id='rest-silver-looted' class='form-control modal-input'>
+            </div>
+            <div class='modal-div'>
+            <label>Number of Characters: </label><input type='number' id='rest-party-size' class='form-control modal-input'>
+            </div>
+            <div class='modal-div'>
+            <label>Bonus XP Awarded: </label><input type='number' id='rest-bonus-xp' class='form-control modal-input'>
+            </div>
+            <div id='wiz' class='modal-div'>Keep Spells? 
+              <select id='wiz-confirm' class='form-control'>
+                <option value='yes'>Yeah</option>
+                <option value='no'>Nah</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Never Mind</button>
+            <button type="button" id='confirm-rest-button' class="btn btn-primary">Rest Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page -->
+    <div id='screen' class='container-fluid'>
+    <div class='row no-gutters'>
+
+      <div id='left' class='col-2'>
+        <nav id='side-bar' class='nav flex-column bg-dark'>
+            <div id='side-bar-top'>
+              <div id='logo'>
+                <h1 id='logo-text' class='nav-item text-light'>Bite Size <img id='logo-img' src='assets/d20.png'> DnD</h1>
+              </div>
+              <div id='side-menu' class="nav-item">
+
+                <div id='select-char' class='nav-item btn-group dropdown side-btn'>
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select Character
+                  </button>
+                    <div class="dropdown-menu" id='selectChar'>
+                      <!-- things get dynamically added here -->
+                  </div>
+                </div>
+                <button id='log-out-btn' class='nav-item btn btn-secondary side-btn'>Log Out</button>
+                <button id='rules-btn' class='nav-item btn btn-secondary side-btn'>Rules</button>
+              </div>
+            </div>
+          <div id='side-logo' class="nav-item"></div>
+          
+          <p id='credits' class="nav-item text-light">Nick Dunlap<br>Helen Marshall<br>2019</p>
+        </nav>
+      </div>
+
+      <div id='page' class='col'>
+        <!-- characterCreator and characterSheet both load here. Rules too. -->
+      </div> 
+
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>  
+</html> 

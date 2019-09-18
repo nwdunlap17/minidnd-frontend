@@ -1,0 +1,64 @@
+.vert-sidebar{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+}
+
+
+#left{
+    min-width: 200px;
+}
+
+#logo{
+    justify-content: flex-start;
+    max-width: 200px;
+    height: 10%;
+    text-align: center;
+    align-self: center;
+    margin-top: 5%;
+} 
+
+#logo-img{
+    height: 1.5em;
+
+}
+
+#credits{
+    text-align: center;
+    
+}
+
+#side-menu{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-self: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+}
+
+#side-bar{
+    justify-content: space-between;
+    position: absolute;
+    max-height: 100vh;
+    height: 100%;
+    width: 20%;
+    min-width: 190px;
+    position: fixed;
+    left: 0;
+}
+
+.side-btn{
+    margin-top: 5%;
+    width: 100%;
+    align-self: center;
+}
+
+
+#side-bar-top{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}

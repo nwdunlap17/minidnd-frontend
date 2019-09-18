@@ -1,0 +1,207 @@
+
+#top{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-item{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    width: 23%;
+}
+
+
+
+.vert{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.vert-small{
+    width: 30%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.horz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+}
+
+.center{
+    min-width: 50%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#char-header{
+    justify-content: center;
+}
+
+#char-body-center{
+    min-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.saves-n-skills{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0% 2% 0% 2%;
+    margin-bottom: 5%;
+    flex-direction: column;
+}
+
+.sBtns{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 15%;
+    /* width: 100%; */
+}
+
+.s-btn{
+    margin: 5%;
+}
+
+.modal-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.modal-input{
+    max-width: 50%;;
+}
+
+#bottom{
+    justify-content: center;
+    padding: 0;
+}
+
+.bottom-item{
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    max-width: 100%;
+    width: 100%;
+    margin-right: 5%;
+}
+
+.bottom-right{
+    max-width: 60%;
+}
+
+.bottom-left{
+    max-width: 40%;
+    margin-right: 5% !important;
+}
+
+#weapons-and-abilities{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#spells{
+    margin-bottom: 5%;
+}
+
+
+
+
+
+#hp-span{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    border: 3px solid #ced4da;
+    border-radius: 50px;
+    background-color: #f5f6f7;
+}
+
+#hp{
+    background-color: #f5f6f7;
+    border: none;
+    font-size: 18px;
+}
+
+.hp-item{
+    width: 33%;
+    padding: 2% 0% 2% 0%;
+    /* padding-top: 0%;
+    padding-right: 0%; */
+    margin: 0%;
+    text-align: center;
+    font-size: 1.5 rem;
+}
+
+#char_description{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#ac-box{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#ac{
+    border: 3px solid #ced4da;
+    border-radius: 50px;
+    background-color: #f5f6f7;
+    width: 33%;
+    margin:0;
+}
+
+#char_photo{
+  display: block;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    width: auto;
+    align-self: center;
+    border: 3px solid #ced4da;
+    border-radius: 20px;
+}
+
+#char_description{
+    max-height: 18%;
+}
+    
+.colon{
+    font-weight: bold;
+    font-family: Aclonica;
+}
+
+#char_name_h1{
+    margin-bottom: 0%;
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 5% 0% 5% 0%;
+}
+
+.close{
+    margin-left: 2.5%;
+}
+
+h4{
+    font-weight: bold;
+}

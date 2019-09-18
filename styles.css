@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+* {
+    font-family: Handlee;
+    font-weight: bold;
+  }
+
+#page{
+    display: flex;
+    background-color: #f5f6f7;
+    padding-bottom: 5%;
+    max-width: 80%;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    min-height: 100%;
+}
+
+#createCharacter{
+    padding-top: 5%;
+}
+
+#screen{
+    padding: 0; 
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.scrollable {
+    overflow-y: hidden;
+}
+
+.scrollable:hover{
+    overflow-y: auto;
+}
+
+#rand-char-btn{
+    margin-bottom: 2%;
+}
+
+#login{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.char-box-borders{
+    padding: 2%;
+    border: 3px solid #ced4da;
+    border-radius: 20px;
+    margin: 2% 0% 2% 0%;
+}
+
+.form-group-with-descriptor{
+    margin-bottom: 0%;
+}
+
+#btnDiv{
+    margin-top: 0%;
+    border: 3px solid #ced4da;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: Aclonica;
+    text-align: center;
+}
+
+
+h3{
+    font-family: Aclonica;
+}
+
+p{
+    font-family: Handlee;
+    font-weight: bold;
+}
+
+.no-list-style{
+    list-style-type: none;
+}
+
