@@ -75,9 +75,13 @@ function randomCharacter(event) {
 
     let raceMenu = document.getElementById(race)
     raceMenu.selected = true;
+    let raceSelector = document.getElementById('selectRace')
+    displayRaceAbilities(raceSelector)
 
     let classMenu = document.getElementById(class_type)
     classMenu.selected = true;
+    let classSelector = document.getElementById('selectClass')
+    displayClassAbilities(classSelector)
 
     let weaponMenu = document.getElementById(weapon)
     weaponMenu.selected = true
