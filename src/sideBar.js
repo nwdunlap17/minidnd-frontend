@@ -17,11 +17,12 @@ function loadSideBar() {
         let rulesBtn = document.getElementById('rules-btn')
         rulesBtn.addEventListener('click', event => {
             event.preventDefault()
-            clearPage()
-            let p = document.createElement('h2')
-            p.textContent = 'Under Construction'
-            let page = document.getElementById('page')
-            page.appendChild(p)
+            // clearPage()
+            // let p = document.createElement('h2')
+            // p.textContent = 'Under Construction'
+            // let page = document.getElementById('page')
+            // page.appendChild(p)
+            window.open('https://drive.google.com/file/d/1kpT-eM3L-tQyeJf-mRt2d5kgy6neKT1R/view?usp=sharing','_blank')
         })
     }
     
