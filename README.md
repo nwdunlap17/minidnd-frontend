@@ -1,4 +1,4 @@
-# minidnd-frontend
+# Mini DND - Frontend
 
 Bite Size DND is a lite version of DND intended to be played in small, 10 minute increments, such as over lunch.
 
