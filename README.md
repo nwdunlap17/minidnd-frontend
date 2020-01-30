@@ -4,9 +4,13 @@ Bite Size DND is a lite version of DND intended to be played in small, 10 minute
 
 This app allows you to quickly create and manage your characters. 
 
-##![Live Version](http://minidnd.herokuapp.com/)##
-
-The rules can be found ![here](https://drive.google.com/file/d/1kpT-eM3L-tQyeJf-mRt2d5kgy6neKT1R/view).
+Links
 
 
-![test](https://www.youtube.com/watch?v=isWqEG9dFac)
+**![Live Version](http://minidnd.herokuapp.com/) available on Heroku.**
+
+Link to explanatory YouTube video: ![here](https://www.youtube.com/watch?v=isWqEG9dFac)
+
+
+Rules Document: ![here](https://drive.google.com/file/d/1kpT-eM3L-tQyeJf-mRt2d5kgy6neKT1R/view)
+
