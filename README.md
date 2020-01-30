@@ -4,7 +4,7 @@ Bite Size DND is a lite version of DND intended to be played in small, 10 minute
 
 This app allows you to quickly create and manage your characters. 
 
-Links:
+**Links:**
 
 **![Live Version on Heroku](http://minidnd.herokuapp.com/)**
 
