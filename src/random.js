@@ -12,6 +12,7 @@ function randomCharacter(event) {
     adjective = adjective.charAt(0).toUpperCase() + adjective.slice(1)
     let location = sampleFrom(descriptors['location'])
     let backstory = sampleFrom(descriptors['backstory'])
+    let name = sampleFrom(descriptors['name'])
 
     let armor;
     let weapon;
@@ -68,7 +69,8 @@ function randomCharacter(event) {
     }
 
 
-
+    let nameBox = document.getElementById('name-field')
+    nameBox.value = name
 
     let charDescrip = document.getElementById('charDescrip')
     charDescrip.value = `${adjective} ${race} ${class_type} from ${location} who ${backstory}`
@@ -800,6 +802,8 @@ function randDescriptors(){
             "isn't technically alive anymore",
             "is convinced they're always being left out",
             "doesn't speak a word of common"
-        ]
+        ],
+        name: ["Oldrili", "Ormack", "Itiorm", "Issche", "Ris", "Vilos", "Ashi", "Ranvering", "Chrywar", "Ocaek", "Draoen", "Lerihon", "Ash'undo", "Osthere", "Zomiv", "Imtai", "As'inai", "Ardcer", "Eng'kini", "Ormumos", "Englye", "Sulisu", "Oughur", "Sabec", "Say'more", "Warquea", "Elddanler", "Vias", "Irothu", "Smywar", "Tunify", "Yere", "Heskelit", "Or'vere", "Samyther", "Cha'end", "Oldoelm", "Nal-it", "Kiming", "Arranaw", "Rynyper", "Engar", "Wortiay", "Oughquahon", "Skelcha", "Ightcer", "Hikelurn", "Ess'rodi", "Tasough", "Adther", "Hurusatu", "Seylvor", "Linytas", "Banyban", "Worshyo", "Banb", "Del", "Atmos", "Ir-ough", "Errad", "Ohail", "Sayena", "Morpris", "Sodel", "Aughiney", "Ichey", "Zoves", "Chriksay", "Que'sery", "Cumor", "Thrun", "Syzet", "Undcusk", "Vevizupa", "Queusk", "Clynys", "Bel'urn", "Aldsh", "Chelorser", "Old'kini", "Roddyn", "Mifucol", "Sams", "Odaro", "Arder", "Cheim", "Than", "Athtiald", "Ibiedu", "Batyharu", "Ildit", "Den'tan", "Duceda", "Ranll", "Dra'shyu", "Ghatan", "Noir", "Itaw", "Whair", "Inaskel", "Llohintor", "Brayrris", "Hindyn", "Aletas", "Rarodum", "Honaughine", "Ageuwar", "Sexel", "Ghang", "Wor'sayi", "Ess'tone", "Er'ust", "Tonhinnysaughild", "Isslom", "Labul", "Ourne", "Paightdyn", "Stoiytor", "Nid", "Abele", "Trail", "Keln", "Omb", "Llaut", "Iawo", "Torst", "Waest", "Uryna", "Shaild", "Avoru", "Diab", "Meigh", "Ikali", "Scheend", "Wheh", "Tonk", "Nigh", "Edyna", "Uchea", "Uende", "Garp", "Shoell", "Raynn", "Cluch", "Brair", "Enala", "Zod", "Iatho", "Zouck", "Taiz", "Blod", "Draef", "Atiay", "Draent", "Ysuly", "Isch", "Ochee", "Orade", "Oraye", "Phuik", "Sont", "Iacke", "Radrr", "Wof", "Zaich", "Essr", "Kimd", "Tanck", "Keun", "Easi", "Aosa", "Fauth", "Croip", "Iradu", "Unth", "Iane", "Kot", "Vernd", "Yloro", "Ightr", "Agel", "Lek", "Iunty", "Ros", "Irayi", "Elmt", "Naet", "Koul", "Rish", "Ichei", "Urno", "Stes", "Uskl", "Uskv", "Huiss", "Vors", "Bres", "Torb", "Ihate", "Enn", "Onysi", "Aghae", "Eema", "Ecery", "Kuf", "Aughp", "Oceri", "Uildu", "Ycera", "Irile", "Hatn", "Tinld", "Rodr", "Inysy", "Oathi", "Kell", "Dem", "Iomi", "Darm", "Isamu", "Lod", "Snes", "Iqueu", "Mosg", "Oomy", "Rhy", "Chat", "Therr", "Versh", "Ackph", "Boiz", "Lersh", "Crays", "Ghath", "Neuh", "Choep", "Reed", "Chath", "Whorynpol", "Essvorlor", "Enthormis", "Seulir", "Zharilbel", "Cerawon", "Slelad", "Schaingiss", "Tualdine", "Taintdar", "Rabanack", "Aspoldel", "Dealddel", "Tiadris", "Buroughque", "Ightelmold", "Kimineend", "Niechest", "Llaughlor", "Smuintver", "Emkelit", "Leskal", "Tairynyer", "Lerveskal", "Raemim", "Ercerild", "Niechtas", "Lykkel", "Nyaward", "Thripolque", "Engrisrod", "Sheghaper", "Risiswar", "Naywper", "Schuiltit", "Verchausk", "Peastyer", "Browarcha", "Nicerash", "Torverrod", "Hangald", "Schawim", "Rhialedan", "Pilyeis", "Issrilran", "Straleress", "Jolan", "Traestor", "Nayltrak", "Peronkel", "Niashat", "Ranhonach", "Caqryn", "Boserest", "Enthuntny", "Muormrak", "Dieldaugh", "Sheatyer", "Lounmos", "Nyradrod", "Gihril", "Haenthend", "Rodchadar", "Emdanend", "Lykelas", "Coonntas", "Seirdar", "Snardine", "Oughendskel", "Oneldtia", "Thastend", "Ormawkin", "Cloostny", "Darormor", "Dynbeliss", "Rakcerest", "Sidarran", "Stridelden", "Lialdat", "Engtasum", "Drogharad", "Niskeltor", "Geendale", "Enankel", "Vaucet", "Whiellage", "Leeldran", "Eldonhin", "Thealnys", "Snoureld", "Lyechard", "Lialdurn", "Imineir", "Eldumas", "Llaeldeld", "Slothum", "Kiaghech", "Tanisselm", "Haturunt", "Babanlor", "Raenthtai", "Coisril", "Kimrakqua", "Ingshyight", "Juworim", "Hinoughden", "Taylaugh", "Torther", "Rheyddyn", "Garbelath", "Llotinrod", "Rothtonlye", "Achawough", "Gedanad", "Nuengtur", "Daetkim", "Quoightyer", "Norit", "Strythine"]
+
     }       
 }
