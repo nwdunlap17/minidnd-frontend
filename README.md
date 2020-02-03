@@ -14,8 +14,8 @@ This app allows you to quickly create and manage your characters.
 
 # Running locally:
 
-This repo only holds the front-end of the application, you'll need the back-end [here](https://github.com/nwdunlap17/minidnd-backend).
+This application can be run simply by opening 'index.html' in your browser. It will by default, access the public back-end running on heroku.
 
-The back-end should be run on port 3000 of local host.
+If you want the application to run entirely on your machine, you'll need the back-end [here](https://github.com/nwdunlap17/minidnd-backend).
 
-Once the back-end is running, simply open index.html in your browser.
+Once the backend is running, go to 'src/index.js' and change 'BASE_URL' to point at the address of the back-end you have created.
