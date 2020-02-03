@@ -14,6 +14,8 @@ This app allows you to quickly create and manage your characters.
 
 # Running locally:
 
-This repo only holds the front-end of the application, you'll need the back-end [here](https://github.com/nwdunlap17/minidnd-backend)
+This repo only holds the front-end of the application, you'll need the back-end [here](https://github.com/nwdunlap17/minidnd-backend).
+
 The back-end should be run on port 3000 of local host.
-Once the back end is running, simply open index.html in your browser.
+
+Once the back-end is running, simply open index.html in your browser.
