@@ -70,7 +70,7 @@ function randomCharacter(event) {
 
 
     let nameBox = document.getElementById('name-field')
-    nameBox.value = name
+    nameBox.text = name
 
     let charDescrip = document.getElementById('charDescrip')
     charDescrip.value = `${adjective} ${race} ${class_type} from ${location} who ${backstory}`
